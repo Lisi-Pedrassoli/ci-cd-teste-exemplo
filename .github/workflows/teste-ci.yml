@@ -22,10 +22,10 @@ jobs:
       run: npm test
 
     -name: Gerar relatório Allure
-    run: npm run report:generate
+      run: npm run report:generate
 
     -name: Publicar relatório no GH Pages
      uses: peaceiris/actions-gh-pages@v4
-      with:
+     with:
        github_token: ${{ secrets.GITHUB_TOKEN }}
        publish_dir: ./public

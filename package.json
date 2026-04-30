@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --browser edge",
-    "report": "allure serve",
+    "report": "npx allure serve --clean allure-results",
     "report:generate": "npx allure generate --clean allure-results --output allure-report"
   },
   "repository": {
